@@ -2,11 +2,15 @@
 
 function addMovie(event){
   event.preventDefault()
+
   let inputField = document.querySelector('input')
   let movie = document.createElement('li')
   let movieTitle = document.createElement('span')
+  
+
   movie.textContent = inputField.value
   movie.appendChild(movieTitle)
+  
   let deleteBtn = document.createElement('button')
   movie.appendChild(deleteBtn)
   deleteBtn.textContent = 'x'
